@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Agregar hoja de estilo  -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Libreria de bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>FBC Melgar Store</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>FBC Melgar Store</h1> <!--Titulo 1-->
+        <h2>Melgar es Arequipa, Arequipa es Melgar</h2> <!--Titulo 2 slogan-->
+
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fs-4" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bolder" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder" href="About.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder" href="contacto.html">Contactenos</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#popupcart">Carrito</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ventana de carrito -->
+    <div  id="popupcart" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tu Carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>No ha añadido ninguna compra</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="vaciarCarrito">Limpiar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notificacion -->
+    <p class="txttitle">Catalogo de productos - Temporada 2023</p><!-- parrafo -->
+
+
+    <!-- parte principal    -->
+    <main class="container text-center">
+
+        <!-- Seccion de catalogo -->
+        <section id="catalogo" class="col-lg-12 d-flex justify-content-center flex-wrap gap-3">
+
+            <!-- Articulo 1 -->
+            <article class="col-lg-12">
+                <picture>
+                    <img class="img-fluid" src="img/X_9-min8734.png" alt="camiseta Melgar 2023">
+                </picture>
+                <h3>Camiseta Oficial 2023 Varón</h3>
+                <p>
+                    <span class="precioOrig">S/ 140.00</span> <span class="precioDesc">-10%</span>
+                    <br><span class="precioFinal">S/ 126.00</span>
+                </p>
+                <button type="button" class="btn btn-warning">Agregar al carro</button>
+            </article>
+
+            <!-- Articulo 2 -->
+            <article class="col-lg-12">
+                <picture>
+                    <img class="img-fluid" src="img/X_chapi-dama-13793.png" alt="camiseta Melgar Dama 2023">
+                </picture>
+                <h3>Camiseta Oficial 2023 Dama</h3>
+                <p>
+                    <span class="precioOrig">S/ 100.00</span> <span class="precioDesc">-15%</span>
+                    <br><span class="precioFinal">S/ 85.00</span>
+                </p>
+                <button type="button" class="btn btn-warning">Agregar al carro</button>
+            </article>
+
+            <!-- Articulo 3 -->
+            <article class="col-lg-12">
+                <picture>
+                    <img class="img-fluid" src="img/casacas.png" alt="Casaca de Entrenamiento">
+                </picture>
+                <h3>Casaca Leon del Sur - 2023</h3>
+                <p>
+                    <span class="precioOrig">S/ 219.00</span> <span class="precioDesc">-31%</span>
+                    <br><span class="precioFinal">S/ 140.00</span>
+                </p>
+                <button type="button" class="btn btn-warning">Agregar al carro</button>
+            </article>
+
+            <!-- Articulo 4 -->
+            <article class="col-lg-12">
+                <picture>
+                    <img class="img-fluid" src="img/vasocervecero.jpg" alt="vaso cerveza">
+                </picture>
+                <h3>Vaso Cervecero 2023</h3>
+                <p>
+                    <span class="precioOrig">S/ 80.00</span> <span class="precioDesc">-21%</span>
+                    <br><span class="precioFinal">S/ 65.00</span>
+                </p>
+                <button type="button" class="btn btn-warning">Agregar al carro</button>
+            </article>
+
+
+
+            <!-- Articulo 5 -->
+            <article class="col-lg-12">
+                <picture>
+                    <img class="img-fluid" src="img/TazaMagica.webp" alt="Taza Mágica Rojinegra">
+                </picture>
+                <h3>Taza Mágica Rojinegra</h3>
+                <p>
+                    <span class="precioOrig">S/ 50.00</span> <span class="precioDesc">-54%</span>
+                    <br><span class="precioFinal">S/ 20.50</span>
+                </p>
+                <button type="button" class="btn btn-warning">Agregar al carro</button>
+            </article>
+
+            <!-- Articulo 6 -->
+            <article class="col-lg-12">
+                <picture>
+                    <img class="img-fluid" src="img/botellaaluminio.png" alt="Botella Aluminio FBC Melgar">
+                </picture>
+                <h3>Botella Aluminio</h3>
+                <p>
+                    <span class="precioOrig">S/ 49.00</span> <span class="precioDesc">-59%</span>
+                    <br><span class="precioFinal">S/ 16.00</span>
+                </p>
+                <button type="button" class="btn btn-warning">Agregar al carro</button>
+            </article>
+
+            <!-- Articulo 7 -->
+            <article class="col-lg-12">
+                <picture>
+                    <img class="img-fluid" src="img/X_vasodblepack26353.jpg" alt="vaso set">
+                </picture>
+                <h3>Vaso Set 2 Unidades</h3>
+                <p>
+                    <span class="precioOrig">S/ 65.00</span> <span class="precioDesc">-35%</span>
+                    <br><span class="precioFinal">S/ 40.00</span>
+                </p>
+                <button type="button" class="btn btn-warning">Agregar al carro</button>
+            </article>
+
+            <!-- Articulo 8 -->
+            <article class="col-lg-12">
+                <picture>
+                    <img class="img-fluid" src="img/ColoniaBille.jpg" alt="Colonia billetera">
+                </picture>
+                <h3>Gift Set Colonia 50 ml + Billetera</h3>
+                <p>
+                    <span class="precioOrig">S/ 79.00</span> <span class="precioDesc">-62%</span>
+                    <br><span class="precioFinal">S/ 29.00</span>
+                </p>
+                <button type="button" class="btn btn-warning">Agregar al carro</button>
+            </article>
+
+            <!-- Articulo 9 -->
+            <article class="col-lg-12">
+                <picture>
+                    <img class="img-fluid" src="img/cervezaartesanal.jpg" alt="Peluche leon">
+                </picture>
+                <h3>Six Pack Cerveza American</h3>
+                <p>
+                    <span class="precioOrig">S/ 100.00</span> <span class="precioDesc">-26%</span>
+                    <br><span class="precioFinal">S/ 72.00</span>
+                </p>
+                <button type="button" class="btn btn-warning">Agregar al carro</button>
+            </article>
+
+            <!-- Articulo 10 -->
+            <article class="col-lg-12">
+                <picture>
+                    <img class="img-fluid" src="img/CuadernosRojinegros.jpg" alt="cuadernos ">
+                </picture>
+                <h3>Cuadernos Rojinegros 2023</h3>
+                <p>
+                    <span class="precioOrig">S/ 15.00</span> <span class="precioDesc">-65%</span>
+                    <br><span class="precioFinal">S/ 5.00</span>
+                </p> >
+                <button type="button" class="btn btn-warning">Agregar al carro</button>
+            </article>
+
+            <!-- Articulo 11 -->
+            <article class="col-lg-12">
+                <picture>
+                    <img class="img-fluid" src="img/Fundas.jpg" alt="Fundas almohada">
+                </picture>
+                <h3>Fundas Almohadas Rojinegras</h3>
+                <p>
+                    <span class="precioOrig">S/ 49.99</span> <span class="precioDesc">-40%</span>
+                    <br><span class="precioFinal">S/ 29.99</span>
+                </p>
+                <button type="button" class="btn btn-warning">Agregar al carro</button>
+            </article>
+
+            <!-- Articulo 12 -->
+            <article class="col-lg-12">
+                <picture>
+                    <img class="img-fluid" src="img/TazaLatte.webp" alt="taza latte">
+                </picture>
+                <h3>Taza Latte Oficial</h3>
+                <p>
+                    <span class="precioOrig">S/ 50.00</span> <span class="precioDesc">-25%</span>
+                    <br><span class="precioFinal">S/ 24.00</span>
+                </p>
+                <button type="button" class="btn btn-warning">Agregar al carro</button>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de Pagina -->
+    <footer>
+        Website designed and built by GT Developers
+    </footer>
+
+    <!-- Aqui se ejecutan las instrucciones Javascript -->
+
+    <!-- cargando funciones de bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Javascript personalizado -->
+    <script src="js/store.js"></script>
+
+   
+</body>
+
+</html>

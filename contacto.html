@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Agregar hoja de estilo  -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Libreria de bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+   
+
+    <title>Contactenos</title>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>FBC Melgar Store</h1> <!--Titulo 1-->
+        <h2>Siempre Contigo Melgar</h2> <!--Titulo 2 slogan-->
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fs-4" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bolder" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder" href="About.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder" href="contacto.html">Contactenos</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-dark fw-bolder" type="submit">Carrito</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Cuerpo principal -->
+    <main>
+
+        <!-- Formulario de contacto -->
+        <section id="formContacto">
+            <h3>Escribenos Ahora.</h3>
+
+            <!-- Formulario -->
+            <form action="contactoRegistro.html" method="post">
+
+                <!-- Input/Entrada de valor -->
+                <div>
+                    <label for="txtName"> Ingrese su Nombre</label>
+                    <input type="text" name="txtName" id="txtName" maxlength="50" required>
+                </div>
+
+                <div>
+                    <label for="txtApellido"> Ingrese su Apellido</label>
+                    <input type="text" name="txtApellido" id="txtApellido" maxlength="54" autocomplete="off">
+                </div>
+                <div>
+                    <label for="txtEmail"> Ingrese su Correo Electronico</label>
+                    <input type="email" name="txtEmail" id="txtEmail" autocomplete="off" maxlength="128">
+                </div>
+
+                <div>
+                    <label for="numphone"> Ingrese su Telefono</label>
+                    <input type="tel" name="numphone" id="numphone" autocomplete="off" maxlength="9">
+                </div>
+
+                <!-- Select /  Seleccion de valor -->
+                <div>
+                    <label for="txtsubject"> Seleccione su Asunto</label>
+                    <select name="txtsubject" id="txtsubject" required>
+                        <option value="">Seleccione una opcion...</option>
+                        <option value="comprarMayor"> Comprar productos por mayor</option>
+                        <option value="consultaDevolucion"> Consulta para devolucion de producto</option>
+                        <option value="comsultaGeneral"> Hacer consulta General</option>
+                    </select>
+                </div>
+
+                <!-- TextArea / Cuerpo de texto -->
+
+                <div>
+                    <label for="bodydetail"> Ingrese su mensaje</label>
+                    <textarea name="bodydetail" id="bodydetail" cols="30" rows="10" required></textarea>
+                </div>
+
+                <!-- input checkbox -->
+                <div>
+                    <input type="checkbox" name="bolAutorizo" id="bolAutorizo" required>
+                    <label for="bolAutorizo"> Autorizo el envio de publicidad e informacion comercial </label>
+                </div>
+
+                <!-- input submit -->
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- Datos de contacto -->
+        <section id="ubicanos">
+            <p>Av. Porongoche 500, Paucarpata 04002<br>
+                Paucarpata - Arequipa - Perú
+            </p>
+            <p>Télefono: 987 895 321</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15308.589267413638!2d-71.5137756!3d-16.4173429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b1a6bcfafb7%3A0xe15fe4683a1d43c0!2sMall%20Aventura%20Plaza%20Arequipa!5e0!3m2!1sen!2spe!4v1680109760321!5m2!1sen!2spe"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+    </main>
+
+    <!-- Pie de Pagina -->
+    <footer>
+        Website designed and built by GT Developers
+    </footer>
+
+    <!-- Aqui se ejecutan las instrucciones Javascript -->
+
+    <!-- cargando funciones de bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+/* Fuentes Tipograficas  */
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Oleo+Script&family=Roboto:ital,wght@0,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+/* Diseño General */
+body {
+    font-family: 'roboto', sans-serif;
+    margin: 0px;
+}
+
+/* Encabezado */
+header {
+    margin: 0px;
+    background-color: #40010D;
+    padding-top: 30px;  
+    padding-bottom: 30px;
+    color: #ffffff;
+    background-image: url(img/header.webp);
+ }
+
+/* Encabezado - Titulo 1*/
+header > h1 {    
+    font-size: 3.5em;
+    font-family: 'roboto', cursive;
+    margin: 0px;
+    text-align: center;
+    color: #F2F2F2;
+}
+
+/* Encabezado - Titulo 2 - Slogan */
+header > h2 {    
+    font-size: 2.5em;
+    font-family: 'Oleo Script', cursive;
+    margin: 0px;
+    text-align: center;
+    color: #038C4C;
+}
+
+/* Navegacion */
+.navbar {
+    background-color:#BF1725;
+}
+
+nav > ul {
+    margin: 0;
+    background-color: #BF1725;
+    text-align: center;
+}
+
+
+nav > ul > li {
+    display: inline-block;
+    padding: 10px 20px;   
+}
+
+nav > ul > li:hover {
+    background-color: #0D0D0D !important;
+}
+
+nav > ul > li > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Notificacion*/
+.txttitle {
+    text-align: center;
+    font-size: 1.7em;
+    margin: 0;    
+    background-color: #FBBC05;
+    padding: 12px;
+    font-weight: bold;    
+}
+
+/* Cuerpo Principal  */
+main {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F0F0F2;
+    padding-top: 30px;
+}
+
+/* Seccion catalogo */
+section#catalogo {
+    text-align: center;
+}
+
+/* Articulos */
+article {
+    width: 24% ;
+    max-width: 300px;
+    display: inline-block;
+    min-width: 200px;   
+    margin: 8px;
+    border: 2px #d7d7d7 solid;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+picture > img {
+    width: 100%;      
+}
+
+/* Articulos - Precios estilos */
+.precioOrig {
+    text-decoration: line-through;
+    font-size: 1.5em;
+    
+}
+
+.precioDesc {
+    color: #BF1725;
+    font-size: 1.5em;
+}
+
+.precioFinal {
+    font-size: 2em;
+    color: #005200;
+    font-weight: bold;
+}
+
+
+
+/* Pie de Pagina */
+footer {
+    font-size: small;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    background-color: #40010D;
+    padding-top: 5px;  
+    padding-bottom: 5px;
+    color: #ffffff;
+    background-image: url(img/header.webp);
+}
+
+
+
+
+
+/*  */
+/*  */
+/* Estilos de pagina Quienes somos*/
+section#QuienesSomos {
+    text-align: left;
+    font-size: 2.5em;
+    width: 24% ;
+    max-width: 260px;
+    min-width: 200px; 
+    display: inline;
+
+}
+
